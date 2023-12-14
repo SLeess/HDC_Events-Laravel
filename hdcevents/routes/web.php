@@ -27,6 +27,13 @@ Route::get('/', function () {
         ]);
 });
 
-Route::get('produtos', function () {
-    return view('products');
+Route::get('/produtos', function () {
+    //busca por parâmetros na URL
+    $busca = request('search');
+    return view('products', ['busca' => $busca]);
+});
+
+Route::get('/produto/{id?}', function ($id = null) {
+    //parametro default $id = 1
+    return view('product', ['id' => $id]);
 });
