@@ -26,7 +26,7 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="/" class="nav-link">Eventos</a></li>
-                        <li class="nav-item"><a href="/" class="nav-link">Criar Eventos</a></li>
+                        <li class="nav-item"><a href="/events/create" class="nav-link">Criar Eventos</a></li>
                         <li class="nav-item"><a href="/" class="nav-link">Entrar</a></li>
                         <li class="nav-item"><a href="/" class="nav-link">Cadastrar</a></li>
                     </ul>
