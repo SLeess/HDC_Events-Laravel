@@ -14,16 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\ProductController;
+
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
 
-Route::get('/produtos', function () {
-    //busca por parâmetros na URL
-    $busca = request('search');
-    return view('products', ['busca' => $busca]);
-});
-
-Route::get('/produto/{id?}', function ($id = null) {
-    //parametro default $id = 1
-    return view('product', ['id' => $id]);
-});
+Route::get('/produtos', [ProductController::class, 'index']);
+Route::get('/produto/{id?}', [ProductController::class, 'search']);
