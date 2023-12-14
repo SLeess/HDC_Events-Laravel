@@ -33,6 +33,7 @@
                         <li class="nav-item"><a href="/events/create" class="nav-link">Criar Eventos</a></li>
                         <li class="nav-item"><a href="/" class="nav-link">Entrar</a></li>
                         <li class="nav-item"><a href="/" class="nav-link">Cadastrar</a></li>
+                        <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
                     </ul>
                 </div>
             </nav>

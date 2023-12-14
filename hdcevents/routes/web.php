@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\EventController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
 
-Route::get('/produtos', [ProductController::class, 'index']);
-Route::get('/produto/{id?}', [ProductController::class, 'search']);
+Route::get('/contato', [ContactController::class, 'index']);
