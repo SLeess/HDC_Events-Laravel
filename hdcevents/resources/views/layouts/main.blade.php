@@ -43,11 +43,11 @@
                             </form>
                         </li>
                         @endauth
+                        <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
                         @guest
                         <li class="nav-item"><a href="/login" class="nav-link">Entrar</a></li>
                         <li class="nav-item"><a href="/register" class="nav-link">Cadastrar</a></li>
                         @endguest
-                        <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
                     </ul>
                 </div>
             </nav>

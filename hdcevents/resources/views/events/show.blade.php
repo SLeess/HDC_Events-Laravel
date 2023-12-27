@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', $event->title)
+@section('title', 'Evento '.$event->title)
 
 @section('content')
     <div class="col-md-10 offset-md-1">
