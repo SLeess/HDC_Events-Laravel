@@ -11,8 +11,16 @@ class EventController extends Controller
 
     //index action = / = rota principal da aplicação
     public function index(){
-        $events = Event::all();
-        return view('welcome', ['events' => $events]);
+        $search = request('search');
+
+        if($search){
+            $events = Event::where([
+                ['title', 'like', '%'.$search.'%']
+            ])->get();
+        }else{
+            $events = Event::all();
+        }
+        return view('welcome', ['events' => $events, 'search' => $search]);
     }
 
     public function create(){
@@ -26,6 +34,8 @@ class EventController extends Controller
         $event->city = $request->city;
         $event->private = $request->private;
         $event->description = $request->description;
+        $event->date = $request->date;
+        $event->items = $request->items;
 
         if($request->hasFile('image') && $request->file('image')->isValid()){
             $requestImage = $request->image;
