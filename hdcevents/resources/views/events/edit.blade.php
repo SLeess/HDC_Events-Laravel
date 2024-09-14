@@ -8,38 +8,36 @@
     <form action="/events/update/{{$event->id}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
-        <div class="form-group mb-1">
+        <div class="mb-1 form-group">
             <label for="image">Imagem do Evento:</label>
             <input type="file" id="image" name="image" class="form-control-file">
             <img src="/img/events/{{$event->image}}" alt="{{$event->title}}" class="img-preview">
         </div>
-        <div class="form-group mt-3 mb-1">
+        <div class="mt-3 mb-1 form-group">
             <label for="title">Evento:</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento" required value="{{$event->title}}">
         </div>
-        <div class="form-group mt-3 mb-1">
+        <div class="mt-3 mb-1 form-group">
             <label for="date">Data do evento:</label>
             <input type="date" class="form-control" id="date" name="date" required value="{{ date('Y-m-d', strtotime($event->date)) }}">
         </div>
-        <div class="form-group mt-3 mb-1">
+        <div class="mt-3 mb-1 form-group">
             <label for="city">Cidade:</label>
             <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento" required value="{{$event->city}}">
         </div>
-        <div class="form-group mt-3 mb-1">
+        <div class="mt-3 mb-1 form-group">
             <label for="private">O evento é privado?</label>
             <select name="private" id="private" class="form-control" required>
                 <option value="0">Não</option>
                 <option value="1" {{$event->private == 1 ? "selected":""}}>Sim</option>
             </select>
         </div>
-        <div class="form-group mt-3 mb-1">
+        <div class="mt-3 mb-1 form-group">
             <label for="description">Descrição:</label>
             <textarea name="description" id="description"  class="form-control" required placeholder="O que vai acontecer no evento?">{{$event->description}}</textarea>
         </div>
-        <div class="form-group mt-3 mb-1">
+        <div class="mt-3 mb-1 form-group">
             <label for="items" class="mb-2">Adicione itens de infraesturutra:</label>
-            {{-- <p>{{var_dump($event->items)}}</p> --}}
-            {{-- <p>{{$event->items['0']}}</p> --}}
             <div class="form-group">
                 <input type="checkbox" name="items[]" value="Cadeiras" {{in_array('Cadeiras', $event->items)?"checked":""}}> Cadeiras
             </div>
@@ -56,7 +54,7 @@
                 <input type="checkbox" name="items[]" value="Brindes" {{in_array('Brindes', $event->items)?"checked":""}}> Brindes
             </div>
         </div>
-        <input type="submit" value="Atualizar dados do Evento" class="btn btn-primary mt-1">
+        <input type="submit" value="Atualizar dados do Evento" class="mt-1 btn btn-primary">
     </form>
 </div>
 @endsection

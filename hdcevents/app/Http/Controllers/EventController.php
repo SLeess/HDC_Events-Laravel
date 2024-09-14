@@ -19,7 +19,7 @@ class EventController extends Controller
         } else {
             $events = Event::all();
         }
-        
+
         $now = Carbon::now();
 
         return view('welcome', compact('events', 'search', 'now'));
@@ -48,7 +48,7 @@ class EventController extends Controller
 
     public function destroy($id){
         Event::findOrFail($id)->delete();
-        return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!');
+        return redirect()->route('events.dashboard')->with('msg', 'Evento excluído com sucesso!');
     }
 
     public function edit($id){
@@ -66,7 +66,6 @@ class EventController extends Controller
 
     public function dashboard(){
         $user = auth()->user();
-
         $events = $user->events;
 
         return view('events.dashboard', ['events' => $events]);

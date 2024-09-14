@@ -30,49 +30,20 @@
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
-        <div class="">
-            {{-- <nav class="navbar navbar-expand-lg lavbar-light">
-                <div class="collapse navbar-collapse" id="navbar">
-                    <a href="/" class="navbar-brand">
-                        <img src="/img/hdcevents_logo.svg" alt="HDC Events">
-                    </a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="/" class="nav-link">Eventos</a></li>
-                        <li class="nav-item"><a href="/events/create" class="nav-link">Criar Eventos</a></li>
-                        @auth
-                        <li class="nav-item"><a href="/dashboard" class="nav-link">Meus Eventos</a></li>
-                        <li class="nav-item">
-                            <form action="/logout" method="post">
-                                @csrf
-                                <a href="/logout" class="nav-link" onclick="
-                                    event.preventDefault();
-                                    this.closest('form').submit();
-                                    ">Sair</a>
-                            </form>
-                        </li>
-                        @endauth
-                        <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
-                        @guest
-                        <li class="nav-item"><a href="/login" class="nav-link">Entrar</a></li>
-                        <li class="nav-item"><a href="/register" class="nav-link">Cadastrar</a></li>
-                        @endguest
-                    </ul>
-                </div>
-            </nav> --}}
-            @livewire('navigation-menu')
-        </div>
+        @livewire('navigation-menu')
         <main>
             <div class="container-fluid">
                 <div class="row">
                     @if(session('msg'))
                         <p class="msg">{{session('msg')}}</p>
                     @endif
-                    @yield('content')
                 </div>
             </div>
+            @yield('content')
         </main>
         <footer>
-            <p>HDC Events &copy; 2023</p>
+            <p>Leandro &copy; 2024</p>
         </footer>
+        @livewireScripts
     </body>
 </html>
