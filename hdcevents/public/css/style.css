@@ -77,9 +77,13 @@ header{
     text-align: center;
 }
 
-#search-container h1{
+#search-container h1,
+h1{
     color: #F2a340;
     margin-bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 36px;
     font-weight: 900;
 }
 
@@ -159,12 +163,6 @@ header{
 #image-container img{
     width: 526px;
     border-radius: 10px;
-}
-
-#info-container h1,
-#search-container h1{
-    font-size: 36px;
-    font-weight: 900;
 }
 
 #info-container p{
