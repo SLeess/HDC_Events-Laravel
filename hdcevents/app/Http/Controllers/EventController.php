@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 
-use App\Models\Event;
-use App\Models\User;
+use Illuminate\Http\Request;
+use App\Models\{Event, User};
 
 class EventController extends Controller
 {
@@ -14,14 +14,15 @@ class EventController extends Controller
     public function index(){
         $search = request('search');
 
-        if($search){
-            $events = Event::where([
-                ['title', 'like', '%'.$search.'%']
-            ])->get();
-        }else{
+        if ($search) {
+            $events = Event::where('title', 'like', '%' . $search . '%')->get();
+        } else {
             $events = Event::all();
         }
-        return view('welcome', ['events' => $events, 'search' => $search]);
+        
+        $now = Carbon::now();
+
+        return view('welcome', compact('events', 'search', 'now'));
     }
 
     public function create(){

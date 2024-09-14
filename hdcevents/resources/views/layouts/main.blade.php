@@ -16,14 +16,22 @@
         <!-- CSS da aplicação -->
         <link rel="stylesheet" href="/css/style.css">
         <script src="/js/script.js"></script>
+        @livewireStyles
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- IONIC icons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg lavbar-light">
+        <div class="">
+            {{-- <nav class="navbar navbar-expand-lg lavbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
                         <img src="/img/hdcevents_logo.svg" alt="HDC Events">
@@ -50,8 +58,9 @@
                         @endguest
                     </ul>
                 </div>
-            </nav>
-        </header>
+            </nav> --}}
+            @livewire('navigation-menu')
+        </div>
         <main>
             <div class="container-fluid">
                 <div class="row">

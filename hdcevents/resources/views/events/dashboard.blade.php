@@ -8,7 +8,7 @@
 </div>
 <div class="col-md-10 offset-md-1 dashboard-events-content">
     @if (count($events)>0)
-    <table class="table">
+    <table id="table-dashboard" class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -21,11 +21,11 @@
             @foreach ($events as $event)
                 <tr>
                     <td scropt="row">{{$loop->index + 1}}</td>
-                    <td><a href="/events/{{$event->id}}">{{$event->title}}</a></td>
+                    <td><a href={{ route('events.show', $event->id) }}>{{$event->title}}</a></td>
                     <td>0</td>
-                    <td class="d-flex">
-                        <a href="/events/edit/{{$event->id}}" class="btn btn-info edit-btn me-2"><ion-icon name="create-outline"></ion-icon>Editar</a>
-                        <form action="events/{{$event->id}}" method="POST">
+                    <td class="d-flex justify-content-center">
+                        <a href="{{ route('events.edit', $event->id) }}" class="btn btn-info edit-btn me-2"><ion-icon name="create-outline"></ion-icon>Editar</a>
+                        <form action="{{ route('events.destroy', $event->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon>Deletar</button>
@@ -36,7 +36,7 @@
         </tbody>
     </table>
     @else
-        <p>Você ainda não tem eventos criados, <a href="/events/create">criar evento</a>.</p>
+        <p>Você ainda não tem eventos criados, <a href="{{ route('events.create') }}">Criar evento</a>.</p>
     @endif
 </div>
 @endsection
