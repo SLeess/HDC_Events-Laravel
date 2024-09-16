@@ -1,122 +1,148 @@
-<h3 align="center" style="text-weight: bolder;"> (Projeto em andamento) </h3>
+<h3 align="center" style="text-weight: bolder;"> (Ongoing Project) </h3>
 
 ---
 
 <h1 align="center"> HDC Events</h1>
 
-Este é o repositório do projeto **HDC Events**, uma aplicação feita com o intuito de aprendizagem e aplicação de técnicas para desenvolvimento, uma aplicação Laravel que permite a criação, exibição e gerenciamento de eventos (Crud) a partir de uma conta cadastrada associada.
+This is the repository for the **HDC Events** project, an application designed for learning and applying development techniques. It's a Laravel application that allows the creation, display, and management of events (CRUD) through a registered and associated account.
 
-## Funcionalidades
+## Project Screenshots
 
-- Criar e editar eventos.
-- Visualizar detalhes de eventos individuais.
-- Dashboard para gerenciar eventos do usuário autenticado.
-- Contato com o suporte.
-- Exclusão de eventos.
-- Autenticação de usuários para acesso às funcionalidades restritas.
+<a target="_blank" align="center" style="display: inline-block;">
+  <img align="left" top="500" width="750" alt="png" src="https://i.imgur.com/zkQEkb2.png">
+</a>
 
-## Estrutura de Rotas
+<!> A Home page of this project with some previously entered data
+<br><br><br>
+In the same image, you can see a navbar adapted from Livewire, enabling Login, registration, and configuration of the profile in use, in addition to, of course, using the system's functionalities to register events.
+<br><br><br><br><br><br><br><br>
 
-As rotas principais da aplicação estão definidas da seguinte forma:
+<a target="_blank" align="center" style="display: inline-block;">
+  <img align="left" top="500" width="750" alt="png" src="https://github.com/user-attachments/assets/7d8f0865-89bb-446c-8681-8dd8800b672e">
+</a>
 
-| Método | Caminho                  | Controlador e Ação                | Middleware      | Descrição                                                                 |
-|--------|--------------------------|-----------------------------------|-----------------|---------------------------------------------------------------------------|
-| GET    | `/`                      | `EventController@index`           | -               | Exibe a página inicial com os eventos.                                    |
-| GET    | `/events/create`          | `EventController@create`          | `auth`          | Exibe o formulário de criação de novos eventos.                           |
-| GET    | `/events/{id}`            | `EventController@show`            | -               | Exibe os detalhes de um evento específico.                                |
-| POST   | `/events`                 | `EventController@store`           | -               | Salva um novo evento no banco de dados.                                   |
-| GET    | `/contato`                | `ContactController@index`         | `auth`          | Página de contato com o suporte.                                          |
-| GET    | `/MeusEventos`            | `EventController@dashboard`       | `auth`          | Exibe o dashboard com os eventos do usuário autenticado.                  |
-| DELETE | `/events/{id}`            | `EventController@destroy`         | `auth`          | Exclui um evento do banco de dados.                                       |
-| GET    | `/events/edit/{id}`       | `EventController@edit`            | `auth`          | Exibe o formulário de edição de um evento.                                |
-| PUT    | `/events/update/{id}`     | `EventController@update`          | `auth`          | Atualiza os dados de um evento no banco de dados.                         |
-| GET    | `/phpinfo`                | Função anônima                    | -               | Exibe as informações do PHP instalado.                                    |
-| GET    | `/dashboard`              | View anônima                      | `auth`, `verified` | Exibe o dashboard padrão do Laravel (Livewire) - **Em adaptação**                                     |
+<!> Here we can see some events created in the general dashboard without any search filter applied.
+<br><br><br>
+And yet without the implementation of the subscriber counting system.
+<br><br><br><br><br><br><br><br><br><br>
 
-## Tecnologias Utilizadas
+<h2 style="display: block;"> Features</h2>
 
-- **Laravel 10**: Framework PHP utilizado no backend.
-- **Bootstrap 5**: Para estilização e responsividade.
-- **Livewire**: Componente para facilitar a interação em tempo real entre o frontend e o backend.
-- **MySQL**: Banco de dados utilizado para persistência dos eventos e usuários.
-- **IONIC Icons**: Ícones utilizados para melhorar a interface.
+- Create, edit, and delete events.
+- View individual event details.
+- Dashboard to manage events for the authenticated user.
+- User authentication to access restricted features.
+- Adaptation for different screen sizes, ensuring a responsive experience on mobile devices, tablets, and desktops.
+- Attendance confirmation for each user for desired events - **(In progress)**
+- Listing of events confirmed by the user as a participant - **(In progress)**
+- Filtered search by Dates and Locations - **(In progress)**
+- Profile photos for each user incorporated into the page design - **(In progress)**
+- Contact with support - **(In progress)**
+- Log of past or deleted events - **(In progress)**
 
-## Requisitos
+## Route Structure
 
-- PHP 8.1 ou superior
+The main routes of the application are defined as follows:
+
+| Method | Path                    | Controller and Action              | Middleware      | Description                                                              |
+|--------|-------------------------|-----------------------------------|-----------------|---------------------------------------------------------------------------|
+| GET    | `/`                     | `EventController@index`           | -               | Displays the home page with events.                                       |
+| GET    | `/events/create`         | `EventController@create`          | `auth`          | Displays the form to create new events.                                   |
+| GET    | `/events/{id}`           | `EventController@show`            | -               | Displays the details of a specific event.                                 |
+| POST   | `/events`                | `EventController@store`           | -               | Saves a new event to the database.                                        |
+| GET    | `/contact`               | `ContactController@index`         | `auth`          | Support contact page.                                                     |
+| GET    | `/MyEvents`              | `EventController@dashboard`       | `auth`          | Displays the dashboard with events for the authenticated user.            |
+| DELETE | `/events/{id}`           | `EventController@destroy`         | `auth`          | Deletes an event from the database.                                       |
+| GET    | `/events/edit/{id}`      | `EventController@edit`            | `auth`          | Displays the event edit form.                                             |
+| PUT    | `/events/update/{id}`    | `EventController@update`          | `auth`          | Updates event data in the database.                                       |
+| GET    | `/phpinfo`               | Anonymous function                | -               | Displays installed PHP information.                                       |
+| GET    | `/dashboard`             | Anonymous View                    | `auth`, `verified` | Displays the default Laravel dashboard (Livewire) - **In adaptation**    |
+
+## Technologies Used
+
+- **Laravel 10**: PHP framework used for the backend.
+- **Bootstrap 5**: For styling and responsiveness.
+- **Livewire**: Component to facilitate real-time interaction between the frontend and backend.
+- **MySQL**: Database used for event and user persistence.
+- **IONIC Icons**: Icons used to enhance the interface.
+
+## Requirements
+
+- PHP 8.1 or higher
 - Composer
 - MySQL
-- Node.js (para compilar os assets do frontend)
+- Node.js (to compile frontend assets)
 
-## Instalação
-Algumas instruções para que o projeto seja executado com sucesso em quaisquer ambientes desde que tenham os requisitos previamente mencionados.
+## Installation
+Some instructions to run the project successfully in any environment as long as the above requirements are met.
 
-1. Clone este repositório em sua máquina local:
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/seu-usuario/hdc-events.git
+   git clone https://github.com/your-username/hdc-events.git
    ```
 
-2. Acesse o diretório do projeto:
+2. Navigate to the project directory:
    ```bash
    cd hdc-events
    ```
 
-3. Instale as dependências do PHP com o Composer:
+3. Install the PHP dependencies with Composer:
    ```bash
    composer install
    ```
 
-4. Instale as dependências do frontend com o NPM:
+4. Install the frontend dependencies with NPM:
    ```bash
    npm install
    ```
 
-5. Copie o arquivo `.env.example` para `.env` e configure o banco de dados:
+5. Copy the `.env.example` file to `.env` and configure the database:
    ```bash
    cp .env.example .env
    ```
 
-6. Gere a chave da aplicação:
+6. Generate the application key:
    ```bash
    php artisan key:generate
    ```
 
-7. Crie o banco de dados e rode as migrações:
+7. Create the database and run the migrations:
    ```bash
    php artisan migrate
    ```
 
-8. Rode as seeds para popular o banco com dados de teste (opcional):
+8. Run the seeds to populate the database with test data (optional):
    ```bash
    php artisan db:seed
    ```
 
-## Compilação dos Assets
+## Compiling Assets
 
-Para compilar os assets do frontend (CSS, JS), utilize o Vite:
+To compile the frontend assets (CSS, JS), use Vite:
 
 ```bash
 npm run dev
 ```
 
-Para compilar para produção:
+For production build:
 
 ```bash
 npm run build
 ```
 
-## Execução do Servidor
+## Running the Server
 
-Inicie o servidor de desenvolvimento do Laravel:
+Start the Laravel development server:
 
 ```bash
 php artisan serve
 ```
 
-Agora você pode acessar a aplicação em `http://localhost:8000`.
+Now you can access the application at `http://localhost:8000`.
 
-## Contato
+## Contact
 
-Para mais informações, entre em contato através da página de suporte, ou envie um e-mail para duraesleandro12@gmail.com
+For more information, contact us through the support page, or send an email to duraesleandro12@gmail.com
 
 ---
+
