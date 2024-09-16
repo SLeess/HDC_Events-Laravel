@@ -47,7 +47,7 @@ Such of these attributes are as Name, Description, Date of occurrence, additiona
 that is in progress and being adapted to be more intuitive and adapted to UX/UI Design
 <br><br><br><br><br><br><br><br>
 
-a target="_blank" align="center" style="display: inline-block;">
+<a target="_blank" align="center" style="display: inline-block;">
   <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/26fea487-28cb-4c03-813c-61942c3fa501">
 </a>
 
