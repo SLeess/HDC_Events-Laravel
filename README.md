@@ -138,7 +138,7 @@ Some instructions to run the project successfully in any environment as long as 
    php artisan key:generate
    ```
 
-7. Create the database and run the migrations:
+7. Start your SGBD, in that case, the MySQL with Xampp an run the migrations (it will create the database too):
    ```bash
    php artisan migrate
    ```
@@ -170,7 +170,7 @@ Start the Laravel development server:
 php artisan serve
 ```
 
-And you can access the application by standard at `http://localhost:8000`.
+And you can access the application by default at `http://localhost:8000`.
 
 ## Contact
 
