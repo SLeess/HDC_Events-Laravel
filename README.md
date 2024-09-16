@@ -170,7 +170,7 @@ Start the Laravel development server:
 php artisan serve
 ```
 
-Now you can access the application at `http://localhost:8000`.
+And you can access the application by standard at `http://localhost:8000`.
 
 ## Contact
 
