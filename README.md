@@ -101,9 +101,9 @@ The main routes of the application are defined as follows:
 ## Requirements
 
 - PHP 8.2 or higher
-- Composer
-- MySQL
-- Node.js (to compile frontend assets)
+- Composer 2.7.7 or higher
+- MySQL / MariaDB 10.4.32
+- Node.js 10.8.2 (to compile frontend assets)
 
 ## Installation
 Some instructions to run the project successfully in any environment as long as the above requirements are met.
@@ -115,7 +115,7 @@ Some instructions to run the project successfully in any environment as long as 
 
 2. Navigate to the project directory:
    ```bash
-   cd hdc-events
+   cd hdcevents
    ```
 
 3. Install the PHP dependencies with Composer:
@@ -167,10 +167,10 @@ npm run build
 Start the Laravel development server:
 
 ```bash
-php artisan serve
+php artisan serve --host=127.0.0.1 --port=8001
 ```
 
-And you can access the application by default at `http://localhost:8000`.
+And you can access the application at `http://localhost:8001`.
 
 ## Contact
 
