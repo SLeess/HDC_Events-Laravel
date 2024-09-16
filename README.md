@@ -1,9 +1,12 @@
-<h3 align="center" style="text-weight: bolder;"> (Ongoing Project) </h3>
+<p align="center">
+ <img width="100px" src="hdcevents\public\img\hdcevents_logo.svg" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">HDC Events</h2>
 
----
+> [!NOTE]\
+> This project is in the development phase. Therefore, some features may be incomplete or inoperative.
+> Created by [@SLeess](https://github.com/SLeess)
 
-<h1 align="center"> HDC Events</h1>
-
+## Explanation
 This is the repository for the **HDC Events** project, an application designed for learning and applying development techniques. It's a Laravel application that allows the creation, display, and management of events (CRUD) through a registered and associated account.
 
 ## Project Screenshots
@@ -24,7 +27,7 @@ In the same image, you can see a navbar adapted from Livewire, enabling Login, r
 <!> Here we can see some events created in the general dashboard without any search filter applied.
 <br><br><br>
 And yet without the implementation of the subscriber counting system.
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 <h2 style="display: block;"> Features</h2>
 
@@ -68,7 +71,7 @@ The main routes of the application are defined as follows:
 
 ## Requirements
 
-- PHP 8.1 or higher
+- PHP 8.2 or higher
 - Composer
 - MySQL
 - Node.js (to compile frontend assets)
