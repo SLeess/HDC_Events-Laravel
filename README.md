@@ -55,7 +55,7 @@ that is in progress and being adapted to be more intuitive and adapted to UX/UI 
 <br><br><br>
 This documentation is available at:
 #### [AdminLTE - Interface for administrators in Laravel](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation)
-<br><br><br><br><br><br>
+<br><br><br>
 
 <h2 style="display: block;"> Features</h2>
 
