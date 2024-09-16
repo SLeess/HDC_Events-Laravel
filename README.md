@@ -9,7 +9,7 @@ This is the repository for the **HDC Events** project, an application designed f
 ## Project Screenshots
 
 <a target="_blank" align="center" style="display: inline-block;">
-  <img align="left" top="500" width="750" alt="png" src="https://i.imgur.com/zkQEkb2.png">
+  <img align="left" top="500" width="550" alt="png" src="https://i.imgur.com/zkQEkb2.png">
 </a>
 
 <!> A Home page of this project with some previously entered data
