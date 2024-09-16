@@ -18,7 +18,7 @@ This is the repository for the **HDC Events** project, an application designed f
 <!> A Home page of this project with some previously entered data
 <br><br><br>
 In the same image, you can see a navbar adapted from Livewire, enabling Login, registration, and configuration of the profile in use, in addition to, of course, using the system's functionalities to register events.
-<br><br><br><br><br><br>
+<br><br><br><br>
 
 <a target="_blank" align="center" style="display: inline-block;">
   <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/7d8f0865-89bb-446c-8681-8dd8800b672e">
@@ -45,7 +45,7 @@ Such of these attributes are as Name, Description, Date of occurrence, additiona
 <!> And finally, we can see a dashboard for Editing and Deleting records.
 <br><br><br>
 that is in progress and being adapted to be more intuitive and adapted to UX/UI Design
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <a target="_blank" align="center" style="display: inline-block;">
   <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/26fea487-28cb-4c03-813c-61942c3fa501">
