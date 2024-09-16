@@ -18,7 +18,7 @@ This is the repository for the **HDC Events** project, an application designed f
 <!> A Home page of this project with some previously entered data
 <br><br><br>
 In the same image, you can see a navbar adapted from Livewire, enabling Login, registration, and configuration of the profile in use, in addition to, of course, using the system's functionalities to register events.
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 
 <a target="_blank" align="center" style="display: inline-block;">
   <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/7d8f0865-89bb-446c-8681-8dd8800b672e">
@@ -28,6 +28,34 @@ In the same image, you can see a navbar adapted from Livewire, enabling Login, r
 <br><br><br>
 And yet without the implementation of the subscriber counting system.
 <br><br><br><br><br><br><br><br>
+
+<a target="_blank" align="center" style="display: inline-block;">
+  <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/70851161-2873-423a-8ec2-3d152641f2cc">
+</a>
+
+<!> On this screen, we can see how to create events from all the attributes of the table in the mirrored database.
+<br><br><br>
+Such of these attributes are as Name, Description, Date of occurrence, additional features present in the event, among others.
+<br><br><br><br><br><br>
+
+<a target="_blank" align="center" style="display: inline-block;">
+  <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/021b8502-898a-41c8-8f58-4603408c9042">
+</a>
+
+<!> And finally, we can see a dashboard for Editing and Deleting records.
+<br><br><br>
+that is in progress and being adapted to be more intuitive and adapted to UX/UI Design
+<br><br><br><br><br><br><br><br>
+
+a target="_blank" align="center" style="display: inline-block;">
+  <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/26fea487-28cb-4c03-813c-61942c3fa501">
+</a>
+
+<!> I am still configuring the features of the Livewire plugin, to adapt the Login system and use it for the project, according to its documentation.
+<br><br><br>
+This documentation is available at:
+#### [AdminLTE - Interface for administrators in Laravel](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation)
+<br><br><br><br><br><br>
 
 <h2 style="display: block;"> Features</h2>
 
