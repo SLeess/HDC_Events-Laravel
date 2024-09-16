@@ -15,16 +15,16 @@ This is the repository for the **HDC Events** project, an application designed f
 <!> A Home page of this project with some previously entered data
 <br><br><br>
 In the same image, you can see a navbar adapted from Livewire, enabling Login, registration, and configuration of the profile in use, in addition to, of course, using the system's functionalities to register events.
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 <a target="_blank" align="center" style="display: inline-block;">
-  <img align="left" top="500" width="750" alt="png" src="https://github.com/user-attachments/assets/7d8f0865-89bb-446c-8681-8dd8800b672e">
+  <img align="left" top="500" width="550" alt="png" src="https://github.com/user-attachments/assets/7d8f0865-89bb-446c-8681-8dd8800b672e">
 </a>
 
 <!> Here we can see some events created in the general dashboard without any search filter applied.
 <br><br><br>
 And yet without the implementation of the subscriber counting system.
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 <h2 style="display: block;"> Features</h2>
 
