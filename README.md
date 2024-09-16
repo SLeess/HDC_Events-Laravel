@@ -173,7 +173,7 @@ Now you can access the application at `http://localhost:8000`.
 
 ## Contact
 
-For more information, contact us through the support page, or send an email to duraesleandro12@gmail.com
+For more information, contact me through the support page, or send an email to duraesleandro12@gmail.com
 
 ---
 
