@@ -96,6 +96,7 @@ The main routes of the application are defined as follows:
 - **Livewire**: Component to facilitate real-time interaction between the frontend and backend.
 - **MySQL**: Database used for event and user persistence.
 - **IONIC Icons**: Icons used to enhance the interface.
+- **Admin LTE**: Admin dashboard template used to improve the UI for managing events.
 
 ## Requirements
 
