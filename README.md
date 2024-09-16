@@ -24,7 +24,7 @@ In the same image, you can see a navbar adapted from Livewire, enabling Login, r
 <!> Here we can see some events created in the general dashboard without any search filter applied.
 <br><br><br>
 And yet without the implementation of the subscriber counting system.
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <h2 style="display: block;"> Features</h2>
 
